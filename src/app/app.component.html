@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ngx-loading [show]="loading" [config]="" [template]="customLoadingTemplate"></ngx-loading>
+<div class="alert-wrapper">
+    <alert *ngFor="let alert of alerts" [type]="alert.type" dismissOnTimeout="5000" class="text-center">
+        {{alert.text}}
+    </alert>
+</div>
+
+<router-outlet></router-outlet>
+
+<!--
+<div class="container-wrapper container d-flex">
+ <app-chatroom-list class="w-25"></app-chatroom-list>
+ <app-chatroom-window class="w-75"></app-chatroom-window>
+</div>
+-->
